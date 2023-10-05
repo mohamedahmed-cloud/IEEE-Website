@@ -1,0 +1,71 @@
+﻿@using System.Text.RegularExpressions;
+
+@{
+	ViewData["Title"] = "Task";
+}
+
+
+<div>
+    <table class="table table-dark table-striped container mt-5">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">CreatedDate</th>
+
+        </tr>
+      </thead>
+      <tbody>
+
+            @{
+                int cnt = 1;
+                foreach(var item in Model)
+                {
+                    <tr >
+                      <th >@cnt</th>
+                      <td >@item.Name</td>
+                        @{
+                            string Description = item.Description;
+                            <td>
+                                @{
+                                   string urlPattern = @"(http|https|ftp)://[^\s/$.?#].[^\s]*";
+                                    var spiltNewLine = Description.Split("\n");
+                                    foreach (var line in spiltNewLine)
+                                    {
+                                        string replacedText = Regex.Replace(line, urlPattern, match => {
+                                            string url = match.Value;
+                                            return $"<a href='{url}'>{url}</a>";
+                                        });
+                                        <p>@Html.Raw(replacedText)</p>
+                                    }
+                            }
+                            </td>
+
+
+                      }
+                      <td>@item.CreatedDate</td>
+                   
+                    </tr>
+                    cnt++;
+                }
+            }
+
+      
+      </tbody>
+    </table>
+</div>
+
+
+<style>
+    td, tr
+    {
+        text-align:center;
+        
+    }
+    
+   
+
+</style>
+
+

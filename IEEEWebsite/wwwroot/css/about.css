@@ -1,0 +1,62 @@
+﻿.all {
+    font-family: 'Open Sans', sans-serif;
+}
+main.pb-3 {
+    padding-bottom: 0px !important;
+}
+
+
+/*Start Story*/
+
+
+
+.our-story .container .left span {
+    color: #006699;
+}
+.our-story .right {
+    display:flex;
+   align-items:center;
+}
+.our-story .right img {
+    width: 100%;
+    border-radius: 400px 0px 0px 400px;
+}
+.text-justify {
+    text-align:justify;
+}
+/*End Story*/
+/* Start Mission*/
+.mission {
+    margin-top: 100px;
+    background: #fafafa;
+    padding: 20px 0px;
+    
+}
+.mission .one img {
+    width: 98%;
+    max-height:99vh;
+    border-radius: 0px 0px 400px ;
+}
+
+
+.mission .two h2 span {
+    color: #006699;
+        
+}
+
+.mission .two > div img {
+    width: 50px;
+}
+
+.mission .three  .three-one{
+}
+.mission .three > section img
+{
+    width: 30px;
+}
+.mission img + p {
+    color: #ffc000;
+    margin-top:8px;
+    font-size:25px;
+}
+/* End Mission*/
