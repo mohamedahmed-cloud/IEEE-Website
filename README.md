@@ -24,12 +24,11 @@
 ----
 
 ### View Website
-- First Video
+- Part 1
 
 
-  
-- Second Video
-https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/7b2af316-4a8c-4124-8833-b5b97eee7ba1
 
+
+https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/640b8ec6-36a4-4714-9c34-161671032884
 
 
