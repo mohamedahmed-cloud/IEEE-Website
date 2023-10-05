@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Manager Website";
+}
+<div class="container manage-website">
+    @*Manage Users*@
+    <div >
+        <a asp-action="HandleUser" asp-controller="Manage">Manage Users in System
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </div>
+   @* Manage Tasks*@
+    <div>
+        <a asp-action="ViewTask" asp-controller="Manage">Manage Tasks in System
+            <i class="fa-solid fa-list-check"></i>
+        </a>
+    </div>
+    @*Manage Category*@
+    <div>
+        <a asp-action="ViewCategory" asp-controller="Manage">Manage Category in System
+            <i class="fa-solid fa-folder"></i>
+        </a>
+    </div>
+   @* Manage Posts *@
+    <div>
+        <a asp-action="ViewPost" asp-controller="Post">Manage Posts in System
+            <i class="fas fa-pencil-alt"></i>
+        </a>
+    </div>
+
+     @* Manage Events *@
+    <div>
+        <a asp-action="ViewEvents" asp-controller="Event">Manage Events in System
+            <i class="fas fa-calendar-alt"></i>
+        </a>
+    </div>
+     @* Manage Warning *@
+    <div>
+        <a asp-action="ViewWarning" asp-controller="Warning">Manage Warning in System
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </a>
+    </div>
+
+
+<style>
+.manage-website
+{
+    margin-top: 40px;
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 30px;
+}
+.manage-website > div
+{
+    background-color:#222;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: min(400px, 94vw);
+    text-align:center;
+    padding:30px 0px;
+    border-radius:20px;
+}
+.manage-website div:hover
+{
+    background-color:#212529;
+}
+.manage-website a:hover
+{
+    color:#357ae8;
+    font-weight:700;
+}
+
+
+.manage-website div a
+{
+    color:white;
+    font-weight:500;
+    text-decoration:none;
+}
+.manage-website div a svg 
+{
+    margin-left:10px;
+}
+
+</style>

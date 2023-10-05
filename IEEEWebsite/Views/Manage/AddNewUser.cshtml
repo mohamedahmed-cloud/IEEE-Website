@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Add New User";
+    var action = Model == null ? "SaveNewUser" : "SaveUpdatedUser";
+    var txt = Model == null ? "Add New User" : "Update User";
+ 
+}
+@model User
+
+<form class="all-login" asp-action="@action" asp-controller="Manage" asp-route-id="@Model?.Id">
+    <div class="container">
+        @*FName *@
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname"  placeholder="First Name"
+            asp-for="FName" >
+            <span asp-validation-for = "FName" class="text-danger"></span>
+      </div>
+
+        @*LName*@
+         <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname"  placeholder="Last Name"
+            asp-for="LName">
+            <span asp-validation-for = "LName" class="text-danger"></span>
+      </div>
+
+        @*EMail*@
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email"
+        asp-for="Email">
+        <span asp-validation-for = "Email" class="text-danger"></span>
+      </div>
+
+      @*Password*@
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="text" class="form-control" id="password" asp-for="Password" placeholder = "Password">
+        <span asp-validation-for = "Password" class="text-danger"></span>
+      </div>
+      @*Role*@
+        <div class="mb-3">
+            <label  class="form-label">Role</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" asp-for="Role">
+              <option value="Student" selected >Student</option>
+              <option value="HR">HR</option>
+              <option value="Admin">Admin</option>
+           </select>
+        </div> 
+
+      @*CategoryName*@
+        <div class="mb-3">
+            <label  class="form-label">Category</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" asp-for="CategoryName">
+                @{
+                    foreach(var item in ViewBag.AllCategory)
+                    {     
+                        <option value="@item.Name" selected>@item.Name</option>
+                    }
+                }
+              
+           </select>
+        </div>
+        @*Total Score*@
+       <div class="mb-3">
+            <label for="score" class="form-label">Total Score</label>
+            <input type="number" class="form-control" id="score" asp-for="TotalScore" placeholder = "Total Score">
+            <span asp-validation-for = "TotalScore" class="text-danger"></span>
+      </div>
+
+      @*Submit*@
+      <button type="submit" class="btn">@txt</button>
+  </div>
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation//dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+<style>
+    .all-login
+    {
+        padding-top:30px;
+        padding-bottom:30px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:80vh;
+        background-color:#f3f0f0;
+    }
+    .all-login .container
+    {
+        width:min(500px, 94vw);
+        background-color:#262424;
+        padding:30px;
+        border-radius:20px;
+    }
+    .all-login .container label
+    {
+        color:#eee !important;
+    }
+    button.btn
+    {
+        background-color:#636c6c;
+        color:#f3ebeb;
+    }
+    button.btn:hover
+    {
+        background-color:white;
+        transition:.4s;
+    }
+
+</style>

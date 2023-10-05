@@ -1,0 +1,156 @@
+﻿@model IEEEWebsite.Models.Task
+
+@{
+    ViewData["Title"] = "Add New User";
+   
+}
+
+<form class="all-login" asp-action="SaveNewTask" asp-controller="Manage" asp-route-id="@Model?.Id">
+    <div class="container">
+        @*Notes*@
+        <div class="task-Note">
+            <div>
+                <p class=" text-center">Make bold  </p>
+                <div class="copylink">
+                    <i class="fa-solid fa-copy  text-success"></i>    
+                </div>
+            </div>
+            <div>
+                <p class="text-center">Make italic   </p>
+                <div class="copylink">
+                    <i class="fa-solid fa-copy text-success"></i>    
+                </div>
+            </div>
+             
+        </div>
+
+
+        @*Name *@
+        <div class="mb-3">
+            <label for="name" class="form-label">Task Name</label>
+            <input type="text" class="form-control" id="name"  placeholder="Task Name"
+            asp-for="Name" >
+            <span asp-validation-for = "Name" class="text-danger"></span>
+      </div>
+      @*Description*@
+      <div class="mb-3">
+            <label for="description" class="form-label">Task Description</label>
+             <textarea class="form-control" placeholder="Task Description" id="floatingTextarea"
+             asp-for="Description"></textarea>
+            <span asp-validation-for = "Description" class="text-danger"></span>
+      </div>  
+
+      @*CategoryName*@
+        <div class="mb-3">
+            <label  class="form-label">Category</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" asp-for="CategoryName">
+                @{
+                    foreach(var item in ViewBag.AllCategory)
+                    {     
+                        <option value="@item.Name" selected>@item.Name</option>
+                    }
+                }
+              
+           </select>
+        </div>
+       
+
+      @*Submit*@
+      <button type="submit" class="btn">ADD</button>
+  </div>
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation//dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<script>
+let btns = document.querySelectorAll(".task-Note div .copylink");
+btns[0].addEventListener("click", () => {
+    var textToCopy = "<b>Text Here</b>";
+    copyToClipBoard(textToCopy);
+  
+})
+btns[1].addEventListener("click", () => {
+    var textToCopy = "<i>Text Here</i>";
+    copyToClipBoard(textToCopy);
+  
+})
+function copyToClipBoard(textToCopy) 
+{
+    //create a temp textarea 
+     var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = textToCopy;
+    document.body.appendChild(tempTextArea)
+    tempTextArea.select()
+    tempTextArea.setSelectionRange(0, 99999); // for phone
+    document.execCommand("copy");
+    //remove a textarea
+     document.body.removeChild(tempTextArea);
+
+}
+
+
+
+</script>
+
+
+
+<style>
+
+    .all-login
+    {
+        padding-top:30px;
+        padding-bottom:30px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:80vh;
+        background-color:#f3f0f0;
+    }
+    .all-login .container
+    {
+        width:min(500px, 94vw);
+        background-color:#262424;
+        padding:30px;
+        border-radius:20px;
+    }
+    .task-Note
+    {
+       
+        color:#6c757d;
+    }
+    .task-Note > div
+    {
+         display: flex;
+        justify-content: space-around;
+        width: min(400px, 94%);
+        margin: auto;
+    }
+    .task-Note p
+    {
+        margin:0px;
+    }
+    .task-Note svg {
+        cursor:pointer;
+    }
+
+    .all-login .container label
+    {
+        color:#eee !important;
+    }
+    button.btn
+    {
+        background-color:#636c6c;
+        color:#f3ebeb;
+    }
+    button.btn:hover
+    {
+        background-color:white;
+        transition:.4s;
+    }
+
+
+</style>

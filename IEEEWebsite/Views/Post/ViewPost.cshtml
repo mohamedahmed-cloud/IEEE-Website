@@ -1,0 +1,135 @@
+﻿@using System.Text.RegularExpressions
+@model List<Post>
+@{
+    ViewData["Title"] = "Post";
+}
+
+
+@{
+    static string HandleDescription(string Description)
+    {
+        string urlPattern = @"(http|https|ftp)://[^\s/$.?#].[^\s]*";
+        string finalText = "";
+        var spiltNewLine = Description.Split("\n");
+        foreach (var line in spiltNewLine)
+        {
+            string replacedText = Regex.Replace(line, urlPattern, match => {
+                string url = match.Value;
+                return $"<a href='{url}'>{url}</a>";
+            });
+            finalText += $"<p>{replacedText}</p>";
+
+        }
+        @*String Formating*@
+        
+        string codePattern = @"`(.*?)`";
+
+        
+        string codeReplacement = "<code>$1</code>";
+
+        string result = Regex.Replace(finalText, codePattern, codeReplacement);
+
+
+        return result;
+    }
+}
+
+
+	
+<div>
+    <table class="table table-dark table-striped container mt-5 w-75">
+        <div class="add-category">
+	        <a asp-action="AddPost" asp-controller="Post">Add Post</a>
+        </div>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Post Name</th>
+          <th scope="col">Post Description</th>
+          <th scope="col">Post Image</th>
+          <th scope="col">Update Post</th>
+          <th scope="col">Delete Post</th>
+        </tr>
+      </thead>
+      <tbody>
+            @{
+                var cnt = 0;
+                foreach(var item in Model)
+                {      
+                    <tr >
+                      <th >@cnt</th>
+                      <td >@item.Name</td>
+                      <td >
+                            @{
+                                var Description = item.Description;
+                                var result = HandleDescription(Description);
+                                
+
+                            }
+                            @Html.Raw(result)
+                            </td>
+                      <td class="post-image-view">
+                        <img src="~/@item.ImagePath" alt = "post -image - @cnt">
+                      </td>
+                      <td >
+                           <a asp-action="UpdatePost" asp-controller="Post" asp-route-id="@item.Id"
+                            class="text-success">
+                                 <i class="fa-solid fa-pen-to-square"></i>
+                           </a>
+                      </td>
+                      <td class="text-center">
+                        <a asp-action="DeletePost" asp-controller="Post" asp-route-id="@item.Id"
+                         class="text-danger">
+                            
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                      
+                      </td>
+                    </tr>
+                    cnt++;
+                }
+            }
+      
+      </tbody>
+    </table>
+</div>
+
+<style>
+    td svg{
+        cursor:pointer;
+    }
+    td, tr
+    {
+        text-align:center;
+    }
+    .add-category
+    {
+        background-color:#2c3034;
+        width:fit-content;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:40px;
+        border-radius:10px;
+        padding:20px;
+        font-weight:500;
+    }
+    .add-category a
+    {
+        color:#fff;
+        text-decoration:none;
+    }
+    .add-category:hover
+    {
+        background-color:#212529;
+    }
+    .add-category a:hover
+    {
+        color:#357ae8;
+        font-weight:700;
+    }
+    td.post-image-view img
+    {
+       width: 100px;
+    }
+
+</style>

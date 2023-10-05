@@ -1,0 +1,162 @@
+﻿@model Warning
+
+@{
+    ViewData["Title"] = "Add Warning";
+}
+@{
+   
+    var Action = Model == null? "SaveWarning": "SaveUpdateWarning";
+    var txt = Model == null ? "Add Warning" : "Update Warning";
+
+
+}
+
+<form class="all-login" asp-action="@Action" asp-controller="Warning" asp-route-id="@Model?.Id">
+    <div class="container">
+        @*Notes*@
+        <div class="Warning-Note">
+            <div>
+                <p class=" text-center">Make bold  </p>
+                <div class="copylink">
+                    <i class="fa-solid fa-copy  text-success"></i>    
+                </div>
+            </div>
+            <div>
+                <p class="text-center">Make italic   </p>
+                <div class="copylink">
+                    <i class="fa-solid fa-copy text-success"></i>    
+                </div>
+            </div>
+             
+        </div>
+
+
+        @*Name *@
+        <div class="mb-3">
+            <label for="name" class="form-label">Warning Name</label>
+            <input type="text" class="form-control" id="name"  placeholder="Warning Name"
+            asp-for="WarningName" >
+            <span asp-validation-for = "WarningName" class="text-danger"></span>
+      </div>
+      @*Description*@
+      <div class="mb-3">
+            <label for="description" class="form-label">Warning Description</label>
+             <textarea class="form-control" placeholder="Warning Description" id="floatingTextarea"
+             asp-for="WarningReason"></textarea>
+            <span asp-validation-for = "WarningReason" class="text-danger"></span>
+      </div>  
+
+      @*CategoryName*@
+        <div class="mb-3">
+            <label  class="form-label">Category</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" asp-for="UserName">
+                @{
+                    foreach(var item in ViewBag.warning)
+                    {     
+                        <option value="@item.FName @item.LName" selected>@item.FName @item.LName</option>
+                    }
+                }
+              
+           </select>
+        </div>
+       
+
+      @*Submit*@
+      <button type="submit" class="btn">@txt</button>
+  </div>
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation//dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<script>
+let btns = document.querySelectorAll(".Warning-Note div .copylink");
+btns[0].addEventListener("click", () => {
+    var textToCopy = "<b>Text Here</b>";
+    copyToClipBoard(textToCopy);
+  
+})
+btns[1].addEventListener("click", () => {
+    var textToCopy = "<i>Text Here</i>";
+    copyToClipBoard(textToCopy);
+  
+})
+function copyToClipBoard(textToCopy) 
+{
+    //create a temp textarea 
+     var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = textToCopy;
+    document.body.appendChild(tempTextArea)
+    tempTextArea.select()
+    tempTextArea.setSelectionRange(0, 99999); // for phone
+    document.execCommand("copy");
+    //remove a textarea
+     document.body.removeChild(tempTextArea);
+
+}
+
+
+
+</script>
+
+
+
+<style>
+
+    .all-login
+    {
+        padding-top:30px;
+        padding-bottom:30px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:80vh;
+        background-color:#f3f0f0;
+    }
+    .all-login .container
+    {
+        width:min(500px, 94vw);
+        background-color:#262424;
+        padding:30px;
+        border-radius:20px;
+    }
+    .Warning-Note
+    {
+       
+        color:#6c757d;
+    }
+    .Warning-Note > div
+    {
+         display: flex;
+        justify-content: space-around;
+        width: min(400px, 94%);
+        margin: auto;
+    }
+    .Warning-Note p
+    {
+        margin:0px;
+    }
+    .Warning-Note svg {
+        cursor:pointer;
+    }
+
+    .all-login .container label
+    {
+        color:#eee !important;
+    }
+    button.btn
+    {
+        background-color:#636c6c;
+        color:#f3ebeb;
+    }
+    button.btn:hover
+    {
+        background-color:white;
+        transition:.4s;
+    }
+
+
+</style>

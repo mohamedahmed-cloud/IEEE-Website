@@ -1,0 +1,57 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "Add Category";
+    var Action = ViewBag.Category?.Id == null ? "SaveCategory" : "SaveUpdateCategory";
+    var txt = Action == "SaveCategory" ? "Save Category" : "Update Category";
+}
+
+<form class="all-login" asp-action="@Action" asp-controller="Manage" asp-route-id="@ViewBag.Category?.Id">
+    <div class="container">
+      <div class="mb-3">
+        <label for="name" class="form-label">Category Name </label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name"
+        asp-for="Name" value="@ViewBag.Category?.Name">
+        <span asp-validation-for = "Name" class="text-danger"></span>
+      </div>
+      <button type="submit" class="btn" >@txt</button>
+  </div>
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation//dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+<style>
+    .all-login
+    {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:80vh;
+        background-color:#f3f0f0;
+    }
+    .all-login .container
+    {
+        width:min(500px, 94vw);
+        background-color:#262424;
+        padding:30px;
+        border-radius:20px;
+    }
+    .all-login .container label
+    {
+        color:#eee !important;
+    }
+    button.btn
+    {
+        background-color:#636c6c;
+        color:#f3ebeb;
+    }
+    button.btn:hover
+    {
+        background-color:white;
+        transition:.4s;
+    }
+
+</style>

@@ -1,0 +1,93 @@
+﻿
+@using System.Text.RegularExpressions
+@model List<Warning>
+
+@{
+	ViewData["Title"] = "Warning";
+}
+
+
+
+@{
+    static string HandleDescription(string Description)
+    {
+        string urlPattern = @"(http|https|ftp)://[^\s/$.?#].[^\s]*";
+        string finalText = "";
+        var spiltNewLine = Description.Split("\n");
+        foreach (var line in spiltNewLine)
+        {
+            string replacedText = Regex.Replace(line, urlPattern, match => {
+                string url = match.Value;
+                return $"<a href='{url}'>{url}</a>";
+            });
+            finalText += $"<p>{replacedText}</p>";
+
+        }
+        @*String Formating*@
+        
+        string codePattern = @"`(.*?)`";
+
+        
+        string codeReplacement = "<code>$1</code>";
+
+        string result = Regex.Replace(finalText, codePattern, codeReplacement);
+
+
+        return $"<div class='text-danger'>  {result}</div>";
+    }
+}
+@{
+    ViewData["Title"] = "Warning";
+}
+
+
+	
+<div>
+    <table class="table table-dark table-striped container mt-5 w-75">
+     
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Warning Name</th>
+          <th scope="col">Warning Reason</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+            @{
+                var cnt = 1;
+                foreach(var item in Model)
+                {      
+                    <tr >
+                      <th >@cnt</th>
+                      <td  class='text-danger'>@item.WarningName</td>
+                      <td >
+                            @{
+                                var Description = item.WarningReason;
+                                var result = HandleDescription(Description);
+                                
+                            }
+                            @Html.Raw(result)
+                            </td>
+                   
+                    </tr>
+                    cnt++;
+                }
+            }
+      
+      </tbody>
+    </table>
+</div>
+
+<style>
+    td svg{
+        cursor:pointer;
+    }
+    td, tr
+    {
+        text-align:center;
+    }
+   
+   
+
+</style>
