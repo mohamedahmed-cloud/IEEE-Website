@@ -1,13 +1,16 @@
 ﻿using IEEEWebsite.Context;
 using IEEEWebsite.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IEEEWebsite.Controllers
 {
+    [Authorize(Policy = "admin")]
     public class ManageController : Controller
     {
 
         IEEEContext IEEEContext = new IEEEContext();
+        
         public IActionResult Index()
         {
             return View();

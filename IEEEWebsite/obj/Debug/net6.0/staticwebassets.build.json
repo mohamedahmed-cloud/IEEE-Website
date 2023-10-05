@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VD8odagUFAX5si04VM6AEYxQH8gR24gfcVE86KzM+ag=",
+  "Hash": "J1USRUt3Qo0LkJPGpVFL/ZzS9EoWwCPmrlkaOj8b6wo=",
   "Source": "IEEEWebsite",
   "BasePath": "_content/IEEEWebsite",
   "Mode": "Default",
@@ -153,12 +153,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Slider.css"
     },
     {
-      "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\DatabaseImage\\events\\d898a4a2-462b-4b3d-a460-90aa1e367c0f_icon.png",
+      "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\DatabaseImage\\events\\86517984-f252-4eac-8a36-d69995662c9e_card2.jpg",
       "SourceId": "IEEEWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\",
       "BasePath": "_content/IEEEWebsite",
-      "RelativePath": "DatabaseImage/events/d898a4a2-462b-4b3d-a460-90aa1e367c0f_icon.png",
+      "RelativePath": "DatabaseImage/events/86517984-f252-4eac-8a36-d69995662c9e_card2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,15 +167,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\DatabaseImage\\events\\d898a4a2-462b-4b3d-a460-90aa1e367c0f_icon.png"
+      "OriginalItemSpec": "wwwroot\\DatabaseImage\\events\\86517984-f252-4eac-8a36-d69995662c9e_card2.jpg"
     },
     {
-      "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\DatabaseImage\\posts\\494592b1-41e4-4504-ab61-cd8d982c851b_build_sec4.png",
+      "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\DatabaseImage\\posts\\aa673e5c-b06c-411d-be63-c35fb171f913_2.jpg",
       "SourceId": "IEEEWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\",
       "BasePath": "_content/IEEEWebsite",
-      "RelativePath": "DatabaseImage/posts/494592b1-41e4-4504-ab61-cd8d982c851b_build_sec4.png",
+      "RelativePath": "DatabaseImage/posts/aa673e5c-b06c-411d-be63-c35fb171f913_2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,41 +184,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\DatabaseImage\\posts\\494592b1-41e4-4504-ab61-cd8d982c851b_build_sec4.png"
-    },
-    {
-      "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\DatabaseImage\\posts\\84e30274-756c-492f-b877-3098178d0b1e_fsec.jpg",
-      "SourceId": "IEEEWebsite",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\",
-      "BasePath": "_content/IEEEWebsite",
-      "RelativePath": "DatabaseImage/posts/84e30274-756c-492f-b877-3098178d0b1e_fsec.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\DatabaseImage\\posts\\84e30274-756c-492f-b877-3098178d0b1e_fsec.jpg"
-    },
-    {
-      "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\DatabaseImage\\posts\\b16b45f3-3e72-41cc-89d3-7508d1a28138_images.jpeg",
-      "SourceId": "IEEEWebsite",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\",
-      "BasePath": "_content/IEEEWebsite",
-      "RelativePath": "DatabaseImage/posts/b16b45f3-3e72-41cc-89d3-7508d1a28138_images.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\DatabaseImage\\posts\\b16b45f3-3e72-41cc-89d3-7508d1a28138_images.jpeg"
+      "OriginalItemSpec": "wwwroot\\DatabaseImage\\posts\\aa673e5c-b06c-411d-be63-c35fb171f913_2.jpg"
     },
     {
       "Identity": "D:\\2.Programming\\2.My Repos\\7.BackEnd\\MVC\\IEEEWebsite\\IEEEWebsite\\wwwroot\\favicon.ico",

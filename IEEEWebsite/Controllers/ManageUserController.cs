@@ -7,6 +7,7 @@ namespace IEEEWebsite.Controllers
     public class ManageUserController : Controller
     {
         IEEEContext IEEEContext = new IEEEContext();
+        
         public IActionResult Index()
         {
             

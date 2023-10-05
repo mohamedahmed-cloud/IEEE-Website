@@ -1,0 +1,128 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = IEEEWebsite
+build_property.RootNamespace = IEEEWebsite
+build_property.ProjectDir = D:\2.Programming\2.My Repos\7.BackEnd\MVC\IEEEWebsite\IEEEWebsite\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\2.Programming\2.My Repos\7.BackEnd\MVC\IEEEWebsite\IEEEWebsite
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Auth/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Event/AddEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQWRkRXZlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Event/ViewEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcVmlld0V2ZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/LeaderBoard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZGVyQm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/ManageUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEFkZENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/AddNewTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEFkZE5ld1Rhc2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/AddNewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEFkZE5ld1VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/HandleUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEhhbmRsZVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/ViewCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFZpZXdDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Manage/ViewTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFZpZXdUYXNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Post/AddPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxBZGRQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Post/ViewPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxWaWV3UG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Profile/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/UserEvent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/UserWarning/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcldhcm5pbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Warning/AddWarning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FybmluZ1xBZGRXYXJuaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Warning/ViewWarning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FybmluZ1xWaWV3V2FybmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/2.Programming/2.My Repos/7.BackEnd/MVC/IEEEWebsite/IEEEWebsite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bjn2d6kxs8
