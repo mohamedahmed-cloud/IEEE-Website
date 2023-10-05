@@ -32,3 +32,19 @@
 https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/640b8ec6-36a4-4714-9c34-161671032884
 
 
+
+- Part 2 
+
+
+
+
+https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/cb8079ca-65f8-4167-8d3a-690b0cb20e7c
+
+
+- Part 3
+
+
+
+
+https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/12692017-e886-4f80-901c-b03d242cdddd
+
