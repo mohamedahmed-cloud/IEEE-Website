@@ -1,8 +1,8 @@
 # IEEE-Website
 
-### Features in Website
+### Features in the Website
 - Authentication
-- Authization
+- Authorization
 - Login-Logout
 - User Crud Operation
 - Task Crud Operation
@@ -12,7 +12,7 @@
 - Warning Crud Operation
 - User can view his Task and his warning
 - User can View his profile and can edit on it
-- LeaderBoard page that will display best user in each category.
+- LeaderBoard page that will display the best user in each category.
 - Pages
     1. Home Page => For Any One
     2. Event Page => For Any One
@@ -38,7 +38,8 @@ https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/640b8ec6-36a4
 
 
 
-https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/cb8079ca-65f8-4167-8d3a-690b0cb20e7c
+https://github.com/mohamedahmed-cloud/IEEE-Website/assets/81932663/dff43a5c-c3b5-4b8c-b0e5-08cb8d862feb
+
 
 
 - Part 3
